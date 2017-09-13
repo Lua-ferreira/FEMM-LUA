@@ -1,0 +1,79 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[Depth]       =  30
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "Zero"
+    <BdryType> = 0
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 3
+  <BeginBlock>
+    <BlockName> = "Air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Porcelain"
+    <ex> = 5.9000000000000004
+    <ey> = 5.9000000000000004
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Pyrex"
+    <ex> = 4.7000000000000002
+    <ey> = 4.7000000000000002
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "+"
+    <Vc> = 3000
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "-"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 10
+0	10	0	0	0
+0	5	0	0	0
+0	0	0	0	0
+40	10	0	0	0
+40	5	0	0	0
+40	0	0	0	0
+-30	40	0	0	0
+70	40	0	0	0
+-30	-30	0	0	0
+70	-30	0	0	0
+[NumSegments] = 11
+0	1	-1	0	0	0	0
+1	4	-1	0	0	0	0
+3	4	-1	0	0	0	0
+0	3	-1	0	0	0	1
+5	4	-1	0	0	0	0
+2	1	-1	0	0	0	0
+2	5	-1	0	0	0	2
+6	7	-1	1	0	0	0
+7	9	-1	1	0	0	0
+9	8	-1	1	0	0	0
+8	6	-1	1	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 3
+28.699999999999999	7.5	2	0.001	0	0
+28.699999999999999	2.3999999999999999	3	0.001	0	0
+18.800000000000001	27.100000000000001	1	0.10000000000000001	0	0
